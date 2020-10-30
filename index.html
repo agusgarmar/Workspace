@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-box">
+    <img class="candado" src="img/logo.png" alt="logo de bloqueo">
+    <h1>Login</h1>
+    <form action="home.html">
+      <!-- Usuario -->
+      <label for="username">Usuario:</label>
+      <input id="usuario" type="text" placeholder="Ingrese su usuario" required>
+
+      <!-- Contraseña -->
+      <label for="password">Contraseña:</label>
+      <input type="password" placeholder="Ingrese su contraseña" required>
+
+      <button type="submit" onclick="guardarUsuario(usuario.value);">Enviar</button>
+    </form>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
